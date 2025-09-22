@@ -237,11 +237,13 @@ async function initWarpContext({
     const coreConfig = await assembleWarpCoreConfig(warpCoreConfigOverrides, currentRegistry);
 
     const chainsInTokens = Array.from(new Set(coreConfig.tokens.map((t) => t.chainName)));
+    console.log('---', chainsInTokens);
     const { chainMetadata, chainMetadataWithOverrides } = await assembleChainMetadata(
       chainsInTokens,
       currentRegistry,
       chainMetadataOverrides,
     );
+
     const multiProvider = new MultiProtocolProvider(chainMetadataWithOverrides);
     const warpCore = WarpCore.FromConfig(multiProvider, coreConfig);
 

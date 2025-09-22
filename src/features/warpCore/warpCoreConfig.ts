@@ -44,14 +44,14 @@ export async function assembleWarpCoreConfig(
     ? filterToIds(registryWarpRoutes, warpRouteWhitelist)
     : registryWarpRoutes;
   const filteredRegistryConfigValues = Object.values(filteredRegistryConfigMap);
-  const filteredRegistryTokens = filteredRegistryConfigValues.map((c) => c.tokens).flat();
+  // const filteredRegistryTokens = filteredRegistryConfigValues.map((c) => c.tokens).flat();
   const filteredRegistryOptions = filteredRegistryConfigValues.map((c) => c.options).flat();
 
   const storeOverrideTokens = storeOverrides.map((c) => c.tokens).flat();
   const storeOverrideOptions = storeOverrides.map((c) => c.options).flat();
 
   const combinedTokens = [
-    ...filteredRegistryTokens,
+    // ...filteredRegistryTokens,
     ...tsConfig.tokens,
     ...yamlConfig.tokens,
     ...storeOverrideTokens,

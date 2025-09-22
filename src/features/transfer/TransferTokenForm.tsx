@@ -94,7 +94,7 @@ export function TransferTokenForm() {
     close: closeConfirmationModal,
     isOpen: isConfirmationModalOpen,
   } = useModal();
-
+  
   const validate = async (values: TransferFormValues) => {
     const [result, overrideToken] = await validateForm(
       warpCore,
@@ -110,7 +110,7 @@ export function TransferTokenForm() {
   };
 
   const onSubmitForm = async (values: TransferFormValues) => {
-    logger.debug('Checking destination native balance for:', values.destination, values.recipient);
+     logger.debug('Checking destination native balance for:', values.destination, values.recipient);
     const balance = await getDestinationNativeBalance(multiProvider, values);
     if (isNullish(balance)) return;
     else if (balance > 0n) {
@@ -820,14 +820,18 @@ async function validateForm(
       origin,
       accounts,
     );
-
-    const result = await warpCore.validateTransfer({
-      originTokenAmount: transferToken.amount(amountWei),
-      destination,
-      recipient,
-      sender: address || '',
-      senderPubKey: await senderPubKey,
-    });
+    let result:any ;
+    try {
+      result = await warpCore.validateTransfer({
+          originTokenAmount: transferToken.amount(amountWei),
+          destination,
+          recipient,
+          sender: address || '',
+          senderPubKey: await senderPubKey,
+        });
+    } catch (error) {
+       logger.error('Error validating form', error);
+    }
 
     if (!isNullish(result)) return [result, null];
 

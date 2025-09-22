@@ -4,17 +4,26 @@
 # Schema here: https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/typescript/sdk/src/metadata/chainMetadataTypes.ts
 ---
 # Example using local anvil chain:
-# anvil1:
-#   chainId: 31337
-#   domainId: 31337
-#   name: anvil1
+sepolia:
+  chainId: 11155111
+  domainId: 11155111
+  name: sepolia
+  protocol: ethereum
+  rpcUrls:
+    - http: https://eth-sepolia.g.alchemy.com/v2/AXS8Sna2ArY-IqdxXDfVelceuCySndNJ
+# fuji:
+#   chainId: 43113
+#   domainId: 43113
+#   name: fuji
 #   protocol: ethereum
 #   rpcUrls:
-#     - http: http://127.0.0.1:8545
-# anvil2:
-#   chainId: 31338
-#   domainId: 31338
-#   name: anvil2
-#   protocol: ethereum
-#   rpcUrls:
-#     - http: http://127.0.0.1:8555
+#     - http: https://avax-fuji.g.alchemy.com/v2/AXS8Sna2ArY-IqdxXDfVelceuCySndNJ
+
+newfuji8:
+  chainId: 415454
+  domainId: 415454
+  name: newfuji8
+  testnet: true
+  protocol: ethereum
+  rpcUrls:
+    - http: https://rpc-testing-cogitus.zeeve.net/ext/bc/2JVJsKUFDPs4GYsKuKz23CpRYmafFbeFY8Qp4uW39BBWcGqmdU/rpc

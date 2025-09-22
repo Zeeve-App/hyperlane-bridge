@@ -21,6 +21,7 @@ export function ChainSelectListModal({
     chainMetadataOverrides: s.chainMetadataOverrides,
     setChainMetadataOverrides: s.setChainMetadataOverrides,
   }));
+  // console.log("chainMetadata", chainMetadata);
 
   const onSelectChain = (chain: ChainMetadata) => {
     onSelect(chain.name);
