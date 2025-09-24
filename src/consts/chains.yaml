@@ -10,20 +10,14 @@ sepolia:
   name: sepolia
   protocol: ethereum
   rpcUrls:
-    - http: https://eth-sepolia.g.alchemy.com/v2/AXS8Sna2ArY-IqdxXDfVelceuCySndNJ
-# fuji:
-#   chainId: 43113
-#   domainId: 43113
-#   name: fuji
-#   protocol: ethereum
-#   rpcUrls:
-#     - http: https://avax-fuji.g.alchemy.com/v2/AXS8Sna2ArY-IqdxXDfVelceuCySndNJ
+    - http: https://warmhearted-little-arrow.ethereum-sepolia.quiknode.pro/96565f9f97ea285f61b52e0a7c99fe01af19c9d4
 
-newfuji8:
-  chainId: 415454
-  domainId: 415454
-  name: newfuji8
+
+cogitusdemonetwork:
+  chainId: 98761
+  domainId: 98761
+  name: cogitusdemonetwork
   testnet: true
   protocol: ethereum
   rpcUrls:
-    - http: https://rpc-testing-cogitus.zeeve.net/ext/bc/2JVJsKUFDPs4GYsKuKz23CpRYmafFbeFY8Qp4uW39BBWcGqmdU/rpc
+    - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc

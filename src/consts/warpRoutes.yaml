@@ -3,21 +3,21 @@
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
 tokens:
-      - chainName: newfuji8
+      - addressOrDenom: "0xff379444326821eafaad6B162A4033b4294Fe622"
+        chainName: cogitusdemonetwork
+        connections:
+          - token: ethereum|sepolia|0x63EE69A022cb1D6EF9AE14600F3Ea827019B9707
+        decimals: 6
+        name: USDC
         standard: EvmHypSynthetic
-        decimals: 18
-        symbol: SPTK3
-        name: MyToken
-        addressOrDenom: "0x3b9C2443F05260143dc32A8C8440774732EFbce4"
+        symbol: USDC
+      - addressOrDenom: "0x63EE69A022cb1D6EF9AE14600F3Ea827019B9707"
+        chainName: sepolia
+        collateralAddressOrDenom: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
         connections:
-          - token: ethereum|sepolia|0xd28aD07769b792D3C37036f44aE1eBFC5aC52B47
-      - chainName: sepolia
+          - token: ethereum|cogitusdemonetwork|0xff379444326821eafaad6B162A4033b4294Fe622
+        decimals: 6
+        name: USDC
         standard: EvmHypCollateral
-        decimals: 18
-        symbol: SPTK3
-        name: MyToken
-        addressOrDenom: "0xd28aD07769b792D3C37036f44aE1eBFC5aC52B47"
-        collateralAddressOrDenom: "0xb581c1F095e6e58124927578e3d5c052e44a778A"
-        connections:
-          - token: ethereum|newfuji8|0x3b9C2443F05260143dc32A8C8440774732EFbce4
+        symbol: USDC
 options: {}
