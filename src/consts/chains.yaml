@@ -18,6 +18,8 @@ cogitusdemonetwork:
   domainId: 98761
   name: cogitusdemonetwork
   testnet: true
+  isTestnet: true
+  displayName: Cogitus Demo Network
   protocol: ethereum
   rpcUrls:
     - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc
