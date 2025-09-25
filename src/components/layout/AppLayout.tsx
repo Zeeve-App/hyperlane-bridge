@@ -35,7 +35,7 @@ export function AppLayout({ children }: PropsWithChildren) {
           <main className="my-2 flex w-full flex-1 items-center justify-center">{children}</main>
         </div>
         <div>
-            <div className="w-full py-2 text-center text-lg text-white-300 shadow-lg">Cogitus by Zeeve © 2025</div>
+            <div className="w-full py-2 text-center text-md text-white shadow-lg">Cogitus by Zeeve © 2025</div>
         </div>
         {/* <Footer /> */}
       </div>
