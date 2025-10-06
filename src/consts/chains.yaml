@@ -23,6 +23,22 @@
 #   protocol: ethereum
 #   rpcUrls:
 #     - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc
+
+sepolia:
+  chainId: 11155111
+  displayName: Sepolia
+  domainId: 11155111
+  isTestnet: true
+  name: sepolia
+  nativeToken:
+    decimals: 18
+    name: Ether
+    symbol: ETH
+  protocol: ethereum
+  rpcUrls:
+    - http: https://side-black-mansion.ethereum-sepolia.quiknode.pro/279e869672be5e84d82ee28daa5e485928d1cf81/
+
+
 pandasea:
   blockExplorers:
     - apiUrl: https://explorer-pandasea-testnet.cogitus.io/
@@ -42,16 +58,3 @@ pandasea:
   rpcUrls:
     - http: https://rpc-pandasea-testnet.cogitus.io/Ox3IVSc3orDPWU9QVeL/ext/bc/nWZ4nNB1i9bT2tYUdEFP5P6S9nLGx289QaWezJge7vPLP9nd4/rpc
 
-sepolia:
-  chainId: 11155111
-  displayName: Sepolia
-  domainId: 11155111
-  isTestnet: true
-  name: sepolia
-  nativeToken:
-    decimals: 18
-    name: Ether
-    symbol: ETH
-  protocol: ethereum
-  rpcUrls:
-    - http: https://side-black-mansion.ethereum-sepolia.quiknode.pro/279e869672be5e84d82ee28daa5e485928d1cf81/
