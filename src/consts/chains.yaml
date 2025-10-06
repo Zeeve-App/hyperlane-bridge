@@ -40,7 +40,7 @@ pandasea:
     symbol: PANDA
   protocol: ethereum
   rpcUrls:
-    - http: https://rpc-pandasea-testnet.cogitus.io/Ox3IVSc3orDPWU9QVeL/ext/bc/nWZ4nN\B1i9bT2tYUdEFP5P6S9nLGx289QaWezJge7vPLP9nd4/rpc
+    - http: https://rpc-pandasea-testnet.cogitus.io/Ox3IVSc3orDPWU9QVeL/ext/bc/nWZ4nNB1i9bT2tYUdEFP5P6S9nLGx289QaWezJge7vPLP9nd4/rpc
 
 sepolia:
   chainId: 11155111
