@@ -24,19 +24,22 @@
 #   rpcUrls:
 #     - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc
 
-sepolia:
-  chainId: 11155111
-  displayName: Sepolia
-  domainId: 11155111
+polygonamoy:
+  chainId: 80002
+  displayName: Polygonamoy
+  domainId: 80002
   isTestnet: true
-  name: sepolia
+  name: polygonamoy
   nativeToken:
     decimals: 18
-    name: Ether
-    symbol: ETH
+    name: POL
+    symbol: POL
   protocol: ethereum
   rpcUrls:
-    - http: https://side-black-mansion.ethereum-sepolia.quiknode.pro/279e869672be5e84d82ee28daa5e485928d1cf81/
+    - http: https://floral-autumn-voice.matic-amoy.quiknode.pro/7e6f9fb36d6726d4eaf8ca60d827af285464c26a/
+      pagination:
+        maxBlockRange: 5
+  technicalStack: polygoncdk
 
 
 pandasea:
