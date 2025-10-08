@@ -18,6 +18,14 @@ See [CUSTOMIZE.md](./CUSTOMIZE.md) for details about adjusting the tokens and br
 
 ### Setup
 
+Update the token >> src/consts/warpRoutes.yaml
+
+Add chains >>  src/consts/chains.yaml
+
+update logo >> src/images/icons
+
+
+
 #### Configure
 
 You need a `projectId` from the WalletConnect Cloud to run the Hyperlane Warp Route UI. Sign up to [WalletConnect Cloud](https://cloud.walletconnect.com) to create a new project.
