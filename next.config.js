@@ -29,7 +29,7 @@ const cspHeader = `
   script-src 'self' 'wasm-unsafe-eval';
   connect-src *;
   img-src 'self' blob: data: ${IMG_SRC_HOSTS.join(' ')};
-  font-src 'self' data: https://fonts.gstatic.com;
+  font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com;
   object-src 'none';
   base-uri 'self';
   form-action 'self';
