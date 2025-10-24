@@ -75,6 +75,7 @@ export async function assembleChainMetadata(
       rpcOverrides.success && rpcOverrides.data[chainName]
         ? rpcOverrides.data[chainName]
         : undefined;
+    console.log('--over-', overridesUrl);
 
     if (!overridesUrl) return metadata;
 
@@ -83,6 +84,8 @@ export async function assembleChainMetadata(
       metadata.protocol === ProtocolType.Ethereum
         ? [...metadata.rpcUrls, overridesUrl]
         : [overridesUrl, ...metadata.rpcUrls];
+    console.log('-meta--', metadata);
+    console.log('-rp--', rpcUrls);
 
     return { ...metadata, rpcUrls };
   });
