@@ -25,6 +25,11 @@
 #     - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc
 
 polygonamoy:
+  blockExplorers:
+    - apiUrl: https://amoy.polygonscan.com/
+      family: blockscout
+      name: polygonamoyexplorer
+      url: https://amoy.polygonscan.com/
   chainId: 80002
   displayName: Polygonamoy
   domainId: 80002
