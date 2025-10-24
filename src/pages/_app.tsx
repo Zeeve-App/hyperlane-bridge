@@ -1,7 +1,7 @@
 import { useIsSsr } from '@hyperlane-xyz/widgets';
 import '@hyperlane-xyz/widgets/styles.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { Analytics } from '@vercel/analytics/react';
+// import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import { ToastContainer, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     <RadixWalletContext>
                       <AppLayout>
                         <Component {...pageProps} />
-                        <Analytics />
+                        {/* <Analytics /> */}
                       </AppLayout>
                     </RadixWalletContext>
                   </StarknetWalletContext>
