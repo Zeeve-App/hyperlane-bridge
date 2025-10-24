@@ -80,10 +80,12 @@ export async function assembleChainMetadata(
     if (!overridesUrl) return metadata;
 
     // Only EVM supports fallback transport, so we are putting the override at the end
-    const rpcUrls =
+    let rpcUrls =
       metadata.protocol === ProtocolType.Ethereum
         ? [...metadata.rpcUrls, overridesUrl]
         : [overridesUrl, ...metadata.rpcUrls];
+
+    rpcUrls = [rpcUrls[0]];
     console.log('-meta--', metadata);
     console.log('-rp--', rpcUrls);
 
