@@ -36,7 +36,7 @@ polygonamoy:
     symbol: POL
   protocol: ethereum
   rpcUrls:
-    - http: https://floral-autumn-voice.matic-amoy.quiknode.pro/7e6f9fb36d6726d4eaf8ca60d827af285464c26a/
+    - http: https://polygon-amoy.g.alchemy.com/v2/Ppsin2qMOeW0VBHDkmYYi
       pagination:
         maxBlockRange: 5
   technicalStack: polygoncdk
