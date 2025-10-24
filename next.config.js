@@ -26,7 +26,7 @@ const cspHeader = `
   default-src 'self';
   script-src 'self'${isDev ? " 'unsafe-eval'" : ''} ${SCRIPT_SRC_HOSTS.join(' ')};
   style-src 'self' 'unsafe-inline' ${STYLE_SRC_HOSTS.join(' ')} https://fonts.googleapis.com;
-  script-src 'self' 'wasm-unsafe-eval';
+  script-src 'self';
   connect-src *;
   img-src 'self' blob: data: ${IMG_SRC_HOSTS.join(' ')};
   font-src 'self' data: https://fonts.gstatic.com https://fonts.googleapis.com;
