@@ -4,7 +4,7 @@ import { ConnectWalletButton } from '../../features/wallet/ConnectWalletButton';
 import Logo from '../../images/logos/app-logo.svg';
 import Name from '../../images/logos/app-name.svg';
 // import Title from '../../images/logos/app-title.svg';
-import Brand from '../../images/icons/Dark.webp';
+import Brand from '../../images/icons/makachain.png';
 
 
 export function Header() {
