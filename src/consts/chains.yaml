@@ -24,43 +24,48 @@
 #   rpcUrls:
 #     - http: https://rpc-cogitusdemonetwork.cogitus.io/SIp4Xce0n12yTrBPxA/ext/bc/h49dwEVWNSoUmpwtFtfBJVrtKN4Y6wFhAE2rXNZeWYoFRYQHJ/rpc
 
-polygonamoy:
+sepolia:
   blockExplorers:
-    - apiUrl: https://amoy.polygonscan.com/
-      family: blockscout
-      name: polygonamoyexplorer
-      url: https://amoy.polygonscan.com/
-  chainId: 80002
-  displayName: Polygonamoy
-  domainId: 80002
+    - apiUrl: https://api-sepolia.etherscan.io/api
+      family: etherscan
+      name: sepoliaetherscan
+      url: https://sepolia.etherscan.io/
+  chainId: 11155111
+  displayName: Sepolia
+  domainId: 11155111
   isTestnet: true
-  name: polygonamoy
+  name: sepolia
   nativeToken:
     decimals: 18
-    name: POL
-    symbol: POL
+    name: Ether
+    symbol: ETH
   protocol: ethereum
   rpcUrls:
-    - http: https://polygon-amoy.g.alchemy.com/v2/Ppsin2qMOeW0VBHDkmYYi
-  technicalStack: polygoncdk
+    - http: https://blue-silent-arm.ethereum-sepolia.quiknode.pro/5892590398c43a4d955ffa2e0485b9c47907ba91
+      pagination:
+        maxBlockRange: 5
+  technicalStack: other
 
 
-pandasea:
+makachain:
   blockExplorers:
-    - apiUrl: https://explorer-pandasea-testnet.cogitus.io/
+    - apiUrl: https://apitestnet.makascan.io/OPzucxxxOSk3i724AKzC/ext/bc/rruErbEb336prxBuKRH9TdA4R4f35Ac5Vaw7he2h3Nd2gnHjd/rpc
       family: blockscout
-      name: pandaseaexplorer
-      url: https://explorer-pandasea-testnet.cogitus.io/
-  chainId: 7770
-  displayName: Pandasea
-  domainId: 7770
+      name: testnetmakascan
+      url: https://testnet.makascan.io/
+  chainId: 777177
+  displayName: Makachain
+  domainId: 777177
   isTestnet: true
-  name: pandasea
+  name: makachain
   nativeToken:
     decimals: 18
-    name: PANDA
-    symbol: PANDA
+    name: MAKA
+    symbol: MAKA
   protocol: ethereum
   rpcUrls:
-    - http: https://rpc-pandasea-testnet.cogitus.io/Ox3IVSc3orDPWU9QVeL/ext/bc/nWZ4nNB1i9bT2tYUdEFP5P6S9nLGx289QaWezJge7vPLP9nd4/rpc
+    - http: https://apitestnet.makascan.io/OPzucxxxOSk3i724AKzC/ext/bc/rruErbEb336prxBuKRH9TdA4R4f35Ac5Vaw7he2h3Nd2gnHjd/rpc
+      pagination:
+        maxBlockRange: 5
+  technicalStack: other
 

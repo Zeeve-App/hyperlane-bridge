@@ -3,19 +3,19 @@
 # The input here is typically the output of the Hyperlane CLI warp deploy command
 ---
 tokens:
-  - addressOrDenom: "0xb64D1596c8a9FC8dee1937A388E4d71d0D477936"
-    chainName: pandasea
+  - addressOrDenom: "0xc771f18cD1D625c34309B85708F72B00807b3F47"
+    chainName: makachain
     connections:
-      - token: ethereum|polygonamoy|0xaac87C27efEeD14325a9795aAd82BCF3A254dc49
+      - token: ethereum|sepolia|0x3a34696fcb185a871B05549fd0B906C421C0e257
     decimals: 6
     name: USDC
     standard: EvmHypSynthetic
     symbol: USDC
-  - addressOrDenom: "0xaac87C27efEeD14325a9795aAd82BCF3A254dc49"
-    chainName: polygonamoy
-    collateralAddressOrDenom: "0x41E94Eb019C0762f9Bfcf9Fb1E58725BfB0e7582"
+  - addressOrDenom: "0x3a34696fcb185a871B05549fd0B906C421C0e257"
+    chainName: sepolia
+    collateralAddressOrDenom: "0x1c7D4B196Cb0C7B01d743Fbc6116a902379C7238"
     connections:
-      - token: ethereum|pandasea|0xb64D1596c8a9FC8dee1937A388E4d71d0D477936
+      - token: ethereum|makachain|0xc771f18cD1D625c34309B85708F72B00807b3F47
     decimals: 6
     name: USDC
     standard: EvmHypCollateral
