@@ -24,7 +24,7 @@ const IMG_SRC_HOSTS = [
 const SCRIPT_SRC_HOSTS = ['https://snaps.consensys.io'];
 const cspHeader = `
   default-src 'self';
-  script-src 'self' ${SCRIPT_SRC_HOSTS.join(' ')};
+  script-src 'self' ${SCRIPT_SRC_HOSTS.join(' ')} ${isDev ? "'unsafe-eval'" : ''};
   style-src 'self' 'unsafe-inline' ${STYLE_SRC_HOSTS.join(' ')} https://fonts.googleapis.com;
   script-src 'self';
   connect-src *;
