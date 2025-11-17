@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useMemo } from 'react';
 import { useChainMetadata } from '../../features/chains/hooks';
 import { useStore } from '../../features/store';
-
 export function ChainLogo({
   chainName,
   background,
@@ -14,10 +13,11 @@ export function ChainLogo({
   size?: number;
 }) {
   const registry = useStore((s) => s.registry);
+  const logoFromEnv = process.env.NEXT_PUBLIC_CHAIN_LOGO;
   const chainMetadata = useChainMetadata(chainName);
   const { name, Icon } = useMemo(() => {
     const name = chainMetadata?.name || '';
-    const logoUri = chainMetadata?.logoURI;
+    const logoUri = chainMetadata?.logoURI ?? logoFromEnv;
     const Icon = logoUri
       ? (props: { width: number; height: number; title?: string }) => (
           <Image src={logoUri} alt="" {...props} />
