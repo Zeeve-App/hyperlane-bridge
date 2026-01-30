@@ -91,11 +91,11 @@
   "scripts": {
     "clean": "rm -rf dist cache .next",
     "dev": "next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS=\"--max-old-space-size=6144\" next build",
     "typecheck": "tsc",
     "lint": "next lint",
     "start": "next start",
-    "test": "vitest --watch false",
+    "test": "NODE_OPTIONS=\"--max-old-space-size=4096\" vitest --watch false",
     "prettier": "prettier --write ./src"
   },
   "types": "dist/src/index.d.ts",
